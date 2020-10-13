@@ -127,6 +127,9 @@ function draw() {
     }
   }
    else if (gameState === END) {
+       //change the trex animation
+      trex.changeAnimation("collided", trex_collided);
+    
       gameOver.visible = true;
       restart.visible = true;
       
@@ -138,9 +141,7 @@ function draw() {
          
          
      
-     //change the trex animation
-      trex.changeAnimation("collided", trex_collided);
-    
+   
       
      
      
